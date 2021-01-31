@@ -22,7 +22,7 @@ function createGradient() {
 }
 
 function draw(){
-    ctx.fillStyle = "rgb(65, 65, 65)";
+    ctx.fillStyle = "black";
     ctx.fillRect(0,0,canv.width, canv.height);
     createGradient();
     angleA += stepA;                                               // increase angles
