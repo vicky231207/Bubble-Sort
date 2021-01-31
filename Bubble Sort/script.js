@@ -3,6 +3,8 @@ let values = [];
 window.onload = ()=>{
     canv = document.getElementById("gc");
     ctx = canv.getContext("2d");
+    ctx.canvas.width  = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
     setInterval(draw, 1000/60);
     for(let i = 0; i < canv.width; i++){
         values.push(Math.random()*canv.height);
